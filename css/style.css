@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+
 :root {
     --primary: #2C5379;
     --secondary: #51CFED;
@@ -10,6 +11,8 @@
     font-weight: 600 !important;
 }
 
+
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -19,25 +22,13 @@
 }
 
 
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
-}
-
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
 
 
 /*** Button ***/
 .btn {
     font-weight: 600;
     transition: .5s;
+    border-radius: 5px;
 }
 
 .btn.btn-primary,
@@ -48,7 +39,9 @@
 .btn-square {
     width: 38px;
     height: 38px;
+    
 }
+
 
 .btn-sm-square {
     width: 32px;
@@ -74,7 +67,7 @@
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    font-family: 'Manrope', sans-serif;
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
@@ -277,7 +270,6 @@
 }
 
 
-/*** Service, Price & Team ***/
 .service-item,
 .price-item,
 .team-item {
@@ -289,10 +281,6 @@
     transition: .5s;
 }
 
-.service-item:hover img,
-.team-item:hover img {
-    transform: scale(1.1);
-}
 
 .service-item a.btn-slide,
 .price-item a.btn-slide,
@@ -369,13 +357,13 @@
     animation: pulse 1s ease-out .5s;
 }
 
-.testimonial-carousel .owl-dots {
+ /* .testimonial-carousel .owl-dots {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}  */
 
-.testimonial-carousel .owl-dot {
+ /* .testimonial-carousel .owl-dot {
     position: relative;
     display: inline-block;
     margin: 0 5px;
@@ -385,12 +373,12 @@
     border: 5px solid var(--light);
     border-radius: 15px;
     transition: .5s;
-}
+}  */
 
-.testimonial-carousel .owl-dot.active {
+/* .testimonial-carousel .owl-dot.active {
     background: var(--light);
     border-color: var(--primary);
-}
+} */
 
 
 /*** Contact ***/
@@ -474,3 +462,19 @@
 .footer .copyright a {
     color: var(--light);
 }
+
+/* 
+.fa-phone-alt{
+    color:red ;
+}
+
+
+.fa-map-marker-alt{
+    color:red;
+}
+
+
+.fa-envelope{
+    color:red ;
+} */
+

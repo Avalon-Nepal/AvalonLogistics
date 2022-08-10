@@ -1,24 +1,14 @@
+
 (function ($) {
     "use strict";
 
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
-    
-    
     // Initiate the wowjs
     new WOW().init();
 
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
+        if ($(this).scrollTop() > 100) {
             $('.sticky-top').css('top', '0px');
         } else {
             $('.sticky-top').css('top', '-100px');
@@ -68,6 +58,8 @@
     });
 
 
+ 
+
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
@@ -83,20 +75,19 @@
         dots: false,
         loop: false,
         nav :false,
-        navText : [
-            // '<i class="bi bi-chevron-left"></i>',
-            // '<i class="bi bi-chevron-right"></i>'
-        ]
+       
     });
 
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: false,
-        smartSpeed: 1000,
-        center: true,
-        dots: true,
-        loop: true,
+        autoplay: true,
+        items:7,
+        smartSpeed: 500,
+        loop:true,
+        center:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:false,
         responsive: {
             0:{
                 items:1
